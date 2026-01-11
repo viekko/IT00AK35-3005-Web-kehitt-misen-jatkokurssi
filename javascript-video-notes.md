@@ -264,7 +264,7 @@ Episode 33/51: Array methods:
     console.log(newArr);                    --> ["A", true, 2, "B", false, 3]
     console.log(newArr2);                   --> ["B", false, 3, 1, 2, 3]
     
-Episode 34/51:  
+Episode 34/51: Arrayn muokkaukseen on käytössä pop, push, shift ja unshift. Jos kaksi taulukkoa halutaan yhdistää niin tulee käyttää concat toimintoa!  
 Episode 35/51:  
 Episode 36/51:  
 Episode 37/51:  
