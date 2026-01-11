@@ -150,7 +150,15 @@ Episode 21/51: Error = virhe koodissa, exception = missä virhe on! Throwing exc
     }
     
 Episode 22/51: Eli jos epäilee virhettä niin try, jos tulee virhe niin catch koodi sen perään, joka kertoo siitä. Lopuksi finally on koodia joka aina toimii!  
-Episode 23/51:  
+Episode 23/51: Aika on objekti jota voi manipuloida. Date sisltää sekä date and time! Aika on säilötty millisekunteina since 1 JAN 1970.
+
+    const randomDate = new Date(2015, 3, 12, 6, 25, 58);    
+    console.log(randomDate);     --> 2015-04-12T13:25:58.000Z
+
+    const now = new Date();
+
+    now.setMonth(3); //April (counting starts zero)
+    
 Episode 24/51:  
 Episode 25/51:  
 Episode 26/51:  
