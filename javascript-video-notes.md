@@ -232,7 +232,38 @@ Episode 32/51: Taulukot (Arrays)
     - Jos indeksissä ei ole vielä tietoa ja koittaa console.log(arr[i]); niin tulee "undefined"
     - console.log(arr[arr1.length -1]); //tulostaa viimesen arvon!
     
-Episode 33/51:  
+Episode 33/51: Array methods:
+
+    array.push(values) lisää yksi tai useampi luku taulukon loppuun ja palauttaa uuden pituuden
+    array.pop() poistaa arvon lopusta ja palauttaa poistetun arvon
+
+    array.shift() poistaa arvon taulukon alusta ja palauttaa poistetun arvon
+    array.unshift(values) lisää yhden tai useamman arvon taulukon alkuun ja palauttaa uuden taulukon pituuden
+
+    Concat --> yhdistää kaksi arraytä uudeksi yhdeksi
+
+    PUSH ja POP
+    let arr1 = ["A", true, 2];
+    console.log(arr1.push("new value"));    --> 4  
+    console.log(arr1);                      --> ["A", true, 2, "new value"]
+    console.log(arr1.pop());                --> "new value"
+    console.log(arr1);                      --> ["A", true, 2]
+
+    SHIFT ja UNSHIFT
+    let arr1 = ["A", true, 2];
+    console.log(arr1.unshift("new value"));    --> 4
+    console.log(arr1);                         --> ["new value", "A", true, 2]
+    console.log(arr1.shift());                 --> "new value"
+    console.log(arr1);                         --> ["A", true, 2]
+
+    CONCAT
+    let arr1 = ["A", true, 2];
+    let arr2 = ["B", false, 3];
+    let newArr = arr1.concat(arr2)
+    let newArr2 = arr2.concat([1,2,3])
+    console.log(newArr);                    --> ["A", true, 2, "B", false, 3]
+    console.log(newArr2);                   --> ["B", false, 3, 1, 2, 3]
+    
 Episode 34/51:  
 Episode 35/51:  
 Episode 36/51:  
