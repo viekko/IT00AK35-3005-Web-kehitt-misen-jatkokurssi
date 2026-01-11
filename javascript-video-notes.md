@@ -71,6 +71,11 @@ Episode 13/51: Template literals:
             console.log(`I am writing code in ${str1}`);                        --> I am writing code in JavaScript
             console.log(`Formatting strings in ${str1} is ${str2}!`);           --> Formatting string in JavaScript is fun!
 
+            let bool1 = true;
+
+            console.log(`1 + 1 is ${1 + 1}`);                                   --> 1 + 1 is 2
+            console.log(`The opposite of true is ${!bool1}`);                   --> The opposite of true is false
+
             
 Episode 14/51:  
 Episode 15/51:  
