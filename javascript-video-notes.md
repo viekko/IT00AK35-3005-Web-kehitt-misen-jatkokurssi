@@ -19,9 +19,9 @@ Episode 8/51: Taas käytiin kommentointia läpi // ja /* --- */. Myös VSCodessa
 Episode 9/51: Muuttujat: 
 
         
-        var one = ;  //Function-scoped → näkyvyys rajautuu funktioon, ei lohkoon. Voidaan uudelleen määritellä samassa scope:ssa.  
-        let two = 2;  //Block-scoped → näkyvyys rajoittuu siihen lohkoon {} missä se on määritelty. Ei voi uudelleen määritellä samassa scope:ssa (mutta arvoa voi muuttaa).    
-        const three = 3;  //Block-scoped myös. Arvo täytyy määritellä heti, muuten syntyy virhe.    
+        var one = ;  //TÄTÄ (MELKEIN) TURHA KÄYTTÄÄ! Function-scoped → näkyvyys rajautuu funktioon, ei lohkoon. Voidaan uudelleen määritellä samassa scope:ssa.  
+        let two = 2;  //KÄYTÄ TÄTÄ LOOPS! Block-scoped → näkyvyys rajoittuu siihen lohkoon {} missä se on määritelty. Ei voi uudelleen määritellä samassa scope:ssa (mutta arvoa voi muuttaa). 
+        const three = 3;  //KÄYTÄ TÄTÄ DEFAULT! Block-scoped myös. Arvo täytyy määritellä heti, muuten syntyy virhe.     
         
         
 Episode 10/51:  
