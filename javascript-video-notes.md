@@ -198,7 +198,7 @@ Episode 27/51: Boolean notes:
         (x || y)
 
         const status = 200;
-        switch (status){
+        switch (status){        //HUOM SWITCH!!!
             case 200:
                 console.log('OK!');
                 break;        //ALWAYS REMEMBER BREAK!!!
@@ -206,12 +206,12 @@ Episode 27/51: Boolean notes:
             case 500:
                 console.log('Error');
                 break
-            default:
+            default:            // HUOM default = else!
                 console.log('Unknown value');
                 break;
         }
         
-Episode 28/51:  
+Episode 28/51: JS mahdollistaa '' string ja !true sekoituksilla kikkailua. Kannattaa pyrkiä aina true! HUOM! 'error' === 'ERROR' PAITSI toUpperCase === 'ERROR'   
 Episode 29/51:  
 Episode 30/51:  
 Episode 31/51:  
