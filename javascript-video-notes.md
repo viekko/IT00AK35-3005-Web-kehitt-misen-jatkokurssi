@@ -121,7 +121,7 @@ Episode 17/51: Matemaattisia funktioita:
     console.log(Math.squrt(num1)); //Square root    --> 10
 
     
-Episode 18/51:  
+Episode 18/51: Perus laskutoimitukset toimivat kuten muissa ohjelmontikielissä. Huomio samanlailla Math objektit!   
 Episode 19/51:  
 Episode 20/51:  
 Episode 21/51:  
