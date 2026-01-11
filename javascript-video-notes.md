@@ -40,10 +40,13 @@ Episode 10/51: Muuttujat:
             console.log(world);                               }
         }                                                     console.log(world);
 
+        
+
 FALSE       const aaron = "Aaron";
             console.log(aaron);
             aaron = "Aaron Powell";
         
+
         
 Episode 11/51:  
 Episode 12/51:  
