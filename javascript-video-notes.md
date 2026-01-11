@@ -35,16 +35,16 @@ Episode 10/51: Muuttujat:
     line 3        var hello = "Hello";
     terminal          OUTPUT = undefined
 
-        if (true) {                                           if (true) {                                         
-  OK        let world = "Hello World";            FALSE            let world = "Hello World";
-            console.log(world);                               }
-        }                                                     console.log(world);
+            if (true) {                                           if (true) {                                         
+      OK        let world = "Hello World";            FALSE            let world = "Hello World";
+                console.log(world);                               }
+            }                                                     console.log(world);
 
         
 
-FALSE       const aaron = "Aaron";
-            console.log(aaron);
-            aaron = "Aaron Powell";
+    FALSE       const aaron = "Aaron";
+                console.log(aaron);
+                aaron = "Aaron Powell";
         
 
         
