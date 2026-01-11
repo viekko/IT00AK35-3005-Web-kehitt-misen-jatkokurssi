@@ -180,7 +180,7 @@ Episode 25/51:
             // Ternary (instant)
             const message = (status === 200) ? 'OK' : 'Error';
             
-Episode 26/51:  
+Episode 26/51: Eli == tarkistaa vain syötteen, === tarkistaa myös int ja string! Vertailu: if, else if, else!  
 Episode 27/51:  
 Episode 28/51:  
 Episode 29/51:  
