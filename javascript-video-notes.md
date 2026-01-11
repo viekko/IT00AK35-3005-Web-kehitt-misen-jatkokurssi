@@ -181,7 +181,36 @@ Episode 25/51:
             const message = (status === 200) ? 'OK' : 'Error';
             
 Episode 26/51: Eli == tarkistaa vain syötteen, === tarkistaa myös int ja string! Vertailu: if, else if, else!  
-Episode 27/51:  
+Episode 27/51: Boolean notes:
+
+        - Tyhjät strings test as false
+        - Null or määrittelemättömät objektit test as false
+        - Numbers: 0 tests as false
+
+        const x = 0;
+        if(!x) {
+            console.log('x contains *NO* value');
+        }
+
+        (x & y)
+        (x && y)
+        (x | y)
+        (x || y)
+
+        const status = 200;
+        switch (status){
+            case 200:
+                console.log('OK!');
+                break;        //ALWAYS REMEMBER BREAK!!!
+            case 400:
+            case 500:
+                console.log('Error');
+                break
+            default:
+                console.log('Unknown value');
+                break;
+        }
+        
 Episode 28/51:  
 Episode 29/51:  
 Episode 30/51:  
