@@ -220,8 +220,16 @@ Episode 29/51: Array = lista tai joukko arvoja. Jokaisella arvolla on indeksi (n
     console.log(arr1length);       --> 0
     console.log(arr2.lengthg);     --> 5
     
-Episode 30/51:  
-Episode 31/51:  
+Episode 30/51: Eli voi taulukon pituus pitää määrittää etukäteen! Taulukon pituuden voi määrittää yllä olevien esimerkkien tavalla!  
+Episode 31/51: Taulukkoon voi lisätä tuetoa kun se luodaan tai luomisen jälkeen. Jos haluaa päästä taulukon tietoon käsiksi niin kannattaa viitata indeksiin!
+
+    let arr1 = ["A", true, 2];
+    console.log(arr1[0]);    --> "A"
+    console.log(arr1[1]);    --> true
+
+    - Jos indeksissä ei ole vielä tietoa ja koittaa console.log(arr[i]); niin tulee "undefined"
+    - console.log(arr[arr1.length -1]); //tulostaa viimesen arvon!
+    
 Episode 32/51:  
 Episode 33/51:  
 Episode 34/51:  
