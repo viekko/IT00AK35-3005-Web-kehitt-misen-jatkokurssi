@@ -4,7 +4,7 @@ Episode 3/51: JS voi laittaa suoraan html sekaan, mutta ennemmin omalle tiedosto
 Episode 4/51: Suositellaan VSCode asentamista ja eri laajennuksien. ESLint analysoi ja korjaa bugeja. Node.js asennus ja NVM (Node Version Manager). --> Asensin nvm:n itselleni Win11, koska kuulemma Node.js versioiden kanssa voi tulla paljon ongelmia.
 Episode 5/51: Tehdään ensimmäinen JS projekti 'Hello world!'. Voi käyttää "" tai '' quoteja JS:ssä. Voi laittaa emojeja. 
     const place = "World";
-    console.log("Hello, %s");
+    console.log("Hello, %s", place);
 Episode 6/51:
 Episode 7/51:
 Episode 8/51:
