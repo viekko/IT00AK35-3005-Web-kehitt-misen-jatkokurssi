@@ -226,11 +226,12 @@ Episode 31/51: Taulukkoon voi lisätä tuetoa kun se luodaan tai luomisen jälke
     let arr1 = ["A", true, 2];
     console.log(arr1[0]);    --> "A"
     console.log(arr1[1]);    --> true
+    
+Episode 32/51: Taulukot (Arrays)
 
     - Jos indeksissä ei ole vielä tietoa ja koittaa console.log(arr[i]); niin tulee "undefined"
     - console.log(arr[arr1.length -1]); //tulostaa viimesen arvon!
     
-Episode 32/51:  
 Episode 33/51:  
 Episode 34/51:  
 Episode 35/51:  
