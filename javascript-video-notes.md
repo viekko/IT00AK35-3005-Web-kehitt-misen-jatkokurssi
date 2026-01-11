@@ -1,7 +1,7 @@
 Episode 1/51: Esittelivät videoiden tekoon osallistuvat. Olettavat että perus osaamista löytyy ohjelmoinnista
 Episode 2/51: Kertoo lyhyesti JS historiasta. Ei ole Java vaan C kaltainen kieli. Muuttujat tunnistetaan automaattisesti. JS on kaikkialla. Voi lukea tiedostoja ja interact tietokannan kanssa. Käytetyin ohjelmointikieli. VSCode kirjoitettu JS.
 Episode 3/51: JS voi laittaa suoraan html sekaan, mutta ennemmin omalle tiedostolle. DOM malli. SRV puolella tarvii Node.js.
-Episode 4/51:
+Episode 4/51: Suositellaan VSCode asentamista ja eri laajennuksien. ESLint analysoi ja korjaa bugeja. Node.js asennus ja NVM (Node Version Manager)
 Episode 5/51:
 Episode 6/51:
 Episode 7/51:
