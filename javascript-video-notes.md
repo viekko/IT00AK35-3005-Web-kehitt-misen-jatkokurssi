@@ -63,7 +63,15 @@ Episode 11/51:  Stringit edustaa kirjoitusta. String Concatenation:
             console.log(num1 + 1);      --> tulostaa 2
             
 Episode 12/51: Pitää lisätä itse välejä stringeihin! Pitää huomioida olettaako JS onko kyseessä int vai string!  
-Episode 13/51:  
+Episode 13/51: Template literals:
+
+            let str1 = "JavaScript";
+            let str2 = "fun";
+
+            console.log(`I am writing code in ${str1}`);                        --> I am writing code in JavaScript
+            console.log(`Formatting strings in ${str1} is ${str2}!`);           --> Formatting string in JavaScript is fun!
+
+            
 Episode 14/51:  
 Episode 15/51:  
 Episode 16/51:  
