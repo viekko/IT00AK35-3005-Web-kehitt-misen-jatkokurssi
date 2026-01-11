@@ -159,7 +159,7 @@ Episode 23/51: Aika on objekti jota voi manipuloida. Date sisltää sekä date a
 
     now.setMonth(3); //April (counting starts zero)
     
-Episode 24/51:  
+Episode 24/51: Kuukaudet lähtee 0, 1, 2, 3... = tammi, helmi, maalis, huhti...    0 = sunnuntai, 1 = maanantai, 2 = tiistai...  
 Episode 25/51:  
 Episode 26/51:  
 Episode 27/51:  
