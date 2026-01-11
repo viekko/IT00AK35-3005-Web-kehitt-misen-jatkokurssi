@@ -149,7 +149,7 @@ Episode 21/51: Error = virhe koodissa, exception = missä virhe on! Throwing exc
         console.log("Code that always will run");
     }
     
-Episode 22/51:  
+Episode 22/51: Eli jos epäilee virhettä niin try, jos tulee virhe niin catch koodi sen perään, joka kertoo siitä. Lopuksi finally on koodia joka aina toimii!  
 Episode 23/51:  
 Episode 24/51:  
 Episode 25/51:  
