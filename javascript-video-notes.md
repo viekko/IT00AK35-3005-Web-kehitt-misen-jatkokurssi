@@ -78,7 +78,14 @@ Episode 13/51: Template literals:
 
             
 Episode 14/51: Huomioi kun käytät template litteraleja ylläolevat säännöt! HUOM bool = true, bool != false!!!  
-Episode 15/51:  
+Episode 15/51:  Tietorakenteet! 
+
+    Simple type system:
+        Number (float), string, boolean, date, function, array and object
+    Special types
+        NaN, null, undefined
+
+        
 Episode 16/51:  
 Episode 17/51:  
 Episode 18/51:  
