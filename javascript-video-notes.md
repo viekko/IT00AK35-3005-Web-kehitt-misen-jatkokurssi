@@ -48,7 +48,20 @@ Episode 10/51: Muuttujat:
         
 
         
-Episode 11/51:  
+Episode 11/51:  Stringit edustaa kirjoitusta. String Concatenation:   
+
+            let str1 = "Hello ";
+            let str2 = "World";
+
+            console.log(str1 + str2);
+            console.log(str1 + "Big " + str2);
+
+            let num1 = 1;
+            let num2 = "1";
+
+            console.log(num1 + num2);   --> tulostaa 11
+            console.log(num1 + 1);      --> tulostaa 2
+            
 Episode 12/51:  
 Episode 13/51:  
 Episode 14/51:  
