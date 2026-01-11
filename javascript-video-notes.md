@@ -62,7 +62,7 @@ Episode 11/51:  Stringit edustaa kirjoitusta. String Concatenation:
             console.log(num1 + num2);   --> tulostaa 11
             console.log(num1 + 1);      --> tulostaa 2
             
-Episode 12/51:  
+Episode 12/51: Pitää lisätä itse välejä stringeihin! Pitää huomioida olettaako JS onko kyseessä int vai string!  
 Episode 13/51:  
 Episode 14/51:  
 Episode 15/51:  
