@@ -1,4 +1,4 @@
-**Episode 1/51: Esittelivät videoiden tekoon osallistuvat. Olettavat että perus osaamista löytyy ohjelmoinnista  
+Episode 1/51: Esittelivät videoiden tekoon osallistuvat. Olettavat että perus osaamista löytyy ohjelmoinnista  
 Episode 2/51: Kertoo lyhyesti JS historiasta. Ei ole Java vaan C kaltainen kieli. Muuttujat tunnistetaan automaattisesti. JS on kaikkialla.   Voi lukea tiedostoja ja interact tietokannan kanssa. Käytetyin ohjelmointikieli. VSCode kirjoitettu JS.  
 Episode 3/51: JS voi laittaa suoraan html sekaan, mutta ennemmin omalle tiedostolle. DOM malli. SRV puolella tarvii Node.js.  
 Episode 4/51: Suositellaan VSCode asentamista ja eri laajennuksien. ESLint analysoi ja korjaa bugeja.   
@@ -132,7 +132,23 @@ Episode 19/51: Numeroiden muutokset stringeiksi parseInt() ja parseFloat() --> p
 
     
 Episode 20/51: parseInt on rakennettu suoraan JS! --> Ei tarvitse muuta kirjastoa. Template litteral arvioidaan siellä sisällä ennen kuin mitään muuta suoritetaan!  
-Episode 21/51:  
+Episode 21/51: Error = virhe koodissa, exception = missä virhe on! Throwing exception kertoo mikä virhe!
+
+    Try = Block of code thta may throw exception
+    Catch = Block of code that will run if an exception is thrown
+    Finally = Optional part of code that will run after the try block or after catch block
+
+    try{
+        criticalCode();
+    }
+    catch(ex){
+        console.log("Got an error");
+        logError(ex);
+    }
+    finally{
+        console.log("Code that always will run");
+    }
+    
 Episode 22/51:  
 Episode 23/51:  
 Episode 24/51:  
