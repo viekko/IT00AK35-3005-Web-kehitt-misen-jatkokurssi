@@ -104,7 +104,20 @@ Episode 16/51: Jos käyttää typeof arrayssä ja tulostaa niin se näyttää ob
 
     Eli vaatii konstruktoria!
     
-Episode 17/51:  
+Episode 17/51: Matemaattisia funktioita:
+
+    let num1 = 100;
+
+    console.log(num1 + 25);    --> 125
+    console.log(num1 - 100);    --> 0
+    console.log(num1 * 100);    --> 10000
+    console.log(num1 / 1500);    --> 0.0666666667
+
+    console.log(num1 % 1500); //Remainder    --> 100
+    console.log(++num1); //Increment    --> 101
+    console.log(--num1); //Decrement    --> 99
+
+    
 Episode 18/51:  
 Episode 19/51:  
 Episode 20/51:  
