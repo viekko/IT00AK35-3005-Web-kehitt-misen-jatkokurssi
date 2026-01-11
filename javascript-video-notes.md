@@ -10,7 +10,7 @@ Episode 6/51: Tehdään ensimmäinen JS projekti 'Hello world!'. Voi käyttää 
     console.log("Welcome to " + place + "!");  
       
     console.log(`This is a message from ${place}.`);  
-Episode 7/51: Koodin kommentointi. //Single line ja /*multi line*/  
+Episode 7/51: Koodin kommentointi. //Single line ja /* multi line */  
 Episode 8/51:  
 Episode 9/51:  
 Episode 10/51:  
