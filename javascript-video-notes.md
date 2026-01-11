@@ -95,6 +95,12 @@ Episode 15/51:  Tietorakenteet!
     HUOM! Käytä joskus === operattoria!
         
 Episode 16/51: Jos käyttää typeof arrayssä ja tulostaa niin se näyttää object! --> Kaikki muut tunnistetaan number, boolean, string...  
+
+    Instaceof tulee käyttää const one = new Number(1);
+    console.log(one instanceof Number);        --> true
+
+    Eli vaatii konstruktoria!
+    
 Episode 17/51:  
 Episode 18/51:  
 Episode 19/51:  
