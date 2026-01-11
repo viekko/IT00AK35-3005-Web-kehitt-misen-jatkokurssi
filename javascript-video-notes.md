@@ -131,7 +131,7 @@ Episode 19/51: Numeroiden muutokset stringeiksi parseInt() ja parseFloat() --> p
     console.log(parseInt('1,5'));    --> 1
 
     
-Episode 20/51:  
+Episode 20/51: parseInt on rakennettu suoraan JS! --> Ei tarvitse muuta kirjastoa. Template litteral arvioidaan siellä sisällä ennen kuin mitään muuta suoritetaan!  
 Episode 21/51:  
 Episode 22/51:  
 Episode 23/51:  
