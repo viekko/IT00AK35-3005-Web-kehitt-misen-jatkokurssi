@@ -212,7 +212,14 @@ Episode 27/51: Boolean notes:
         }
         
 Episode 28/51: JS mahdollistaa '' string ja !true sekoituksilla kikkailua. Kannattaa pyrkiä aina true! HUOM! 'error' === 'ERROR' PAITSI toUpperCase === 'ERROR'   
-Episode 29/51:  
+Episode 29/51: Array = lista tai joukko arvoja. Jokaisella arvolla on indeksi (numero arvo), joka edustaa taulukon (array) arvoa. Taulukon pituuden voi tarkistaa arrayName.length
+
+    let arrayLength = 5;
+    let arr1 = [];
+    let arr2 = Array(arrayLength);
+    console.log(arr1length);       --> 0
+    console.log(arr2.lengthg);     --> 5
+    
 Episode 30/51:  
 Episode 31/51:  
 Episode 32/51:  
