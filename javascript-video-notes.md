@@ -160,7 +160,26 @@ Episode 23/51: Aika on objekti jota voi manipuloida. Date sisltää sekä date a
     now.setMonth(3); //April (counting starts zero)
     
 Episode 24/51: Kuukaudet lähtee 0, 1, 2, 3... = tammi, helmi, maalis, huhti...    0 = sunnuntai, 1 = maanantai, 2 = tiistai...  
-Episode 25/51:  
+Episode 25/51:
+
+        Operaattorit:
+            <
+            <=
+            >
+            >=
+
+            == checks the equality regardless of data type    --> '42' == 42 tests as true!
+            === check for equal values and data types        --> '42' == 42 tests as false
+            != (not data type)
+            !== (data type!)
+
+
+            const status = 200;
+            if (status === 200) console.log('OK!'); // HUOM! Voi skipata {} sulkeet!
+
+            // Ternary (instant)
+            const message = (status === 200) ? 'OK' : 'Error';
+            
 Episode 26/51:  
 Episode 27/51:  
 Episode 28/51:  
