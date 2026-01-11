@@ -91,6 +91,8 @@ Episode 15/51:  Tietorakenteet!
 
         instanceof operator
         --> Returns a boolean of if a value matches the data type
+
+    HUOM! Käytä joskus === operattoria!
         
 Episode 16/51:  
 Episode 17/51:  
