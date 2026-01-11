@@ -85,6 +85,12 @@ Episode 15/51:  Tietorakenteet!
     Special types
         NaN, null, undefined
 
+    Checking type:
+        typeof operator
+        --> Returns a string of the data type primitive
+
+        instanceof operator
+        --> Returns a boolean of if a value matches the data type
         
 Episode 16/51:  
 Episode 17/51:  
