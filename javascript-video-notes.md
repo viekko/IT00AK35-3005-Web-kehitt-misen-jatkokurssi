@@ -77,7 +77,7 @@ Episode 13/51: Template literals:
             console.log(`The opposite of true is ${!bool1}`);                   --> The opposite of true is false
 
             
-Episode 14/51:  
+Episode 14/51: Huomioi kun käytät template litteraleja ylläolevat säännöt! HUOM bool = true, bool != false!!!  
 Episode 15/51:  
 Episode 16/51:  
 Episode 17/51:  
