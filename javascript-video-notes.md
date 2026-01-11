@@ -24,7 +24,17 @@ Episode 9/51: Muuttujat:
         const three = 3;  //KÄYTÄ TÄTÄ DEFAULT! Block-scoped myös. Arvo täytyy määritellä heti, muuten syntyy virhe.     
         
         
-Episode 10/51:  
+Episode 10/51: Muuttujat:
+
+    line 1        var hello = "Hello";
+    line 2        console.log(hello);
+    terminal          OUTPUT = Hello
+
+    line 1        console.log(hello);
+    line 2
+    line 3        var hello = "Hello";
+    terminal          OUTPUT = undefined
+        
 Episode 11/51:  
 Episode 12/51:  
 Episode 13/51:  
