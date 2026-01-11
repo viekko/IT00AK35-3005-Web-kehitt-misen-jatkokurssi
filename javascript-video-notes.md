@@ -122,7 +122,15 @@ Episode 17/51: Matemaattisia funktioita:
 
     
 Episode 18/51: Perus laskutoimitukset toimivat kuten muissa ohjelmontikielissä. Huomio samanlailla Math objektit!   
-Episode 19/51:  
+Episode 19/51: Numeroiden muutokset stringeiksi parseInt() ja parseFloat() --> parseFloat() käytetään desimaalilukujen kanssa. toString() muuttaa numerot stringeiksi.
+
+    console.log(parseInt('ABC'));    --> NaN
+    console.log(parseInt('0xF')); //Heksanumero!    --> 15
+
+    console.log(parseFloat('ABC'));    --> NaN
+    console.log(parseInt('1,5'));    --> 1
+
+    
 Episode 20/51:  
 Episode 21/51:  
 Episode 22/51:  
