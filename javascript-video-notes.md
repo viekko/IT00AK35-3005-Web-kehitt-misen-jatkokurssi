@@ -117,6 +117,9 @@ Episode 17/51: Matemaattisia funktioita:
     console.log(++num1); //Increment    --> 101
     console.log(--num1); //Decrement    --> 99
 
+    console.log(Math.PI); //Pi    --> 3.141592653589793
+    console.log(Math.squrt(num1)); //Square root    --> 10
+
     
 Episode 18/51:  
 Episode 19/51:  
