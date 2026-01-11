@@ -94,7 +94,7 @@ Episode 15/51:  Tietorakenteet!
 
     HUOM! Käytä joskus === operattoria!
         
-Episode 16/51:  
+Episode 16/51: Jos käyttää typeof arrayssä ja tulostaa niin se näyttää object! --> Kaikki muut tunnistetaan number, boolean, string...  
 Episode 17/51:  
 Episode 18/51:  
 Episode 19/51:  
