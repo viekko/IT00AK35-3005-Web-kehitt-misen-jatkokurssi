@@ -265,7 +265,33 @@ Episode 33/51: Array methods:
     console.log(newArr2);                   --> ["B", false, 3, 1, 2, 3]
     
 Episode 34/51: Arrayn muokkaukseen on käytössä pop, push, shift ja unshift. Jos kaksi taulukkoa halutaan yhdistää niin tulee käyttää concat toimintoa!  
-Episode 35/51:  
+Episode 35/51: Looppeja käytetään listan iterointiin ja while something is true -periaatteella.
+
+    WHile LOOPS (Funktioiden kutsumiseen!)
+    const names = ['Justin', 'Sarah', 'Christopher'];
+
+    let index = 0;                        //kertoo mistä aloitetaan JS
+    while (index < names.length) {        //suorita niin kauan kuin tämä on oikein
+        const name = names[index];
+        console.log(name);
+        index++;                          //Kriittistä mennä indexeissä eteenpäin!
+    }
+
+    For LOOPS (Looppaamaan known number of times!)
+    const names = ['Justin', 'Sarah', 'Christopher'];
+
+    for (let index = 0; index < names.length; index++) {
+        const name = names[index];
+        console.log(name);
+    }
+
+    For ... of loops (vrt. C# foreach loop) (taulukoihin tai kokoelmiin!)
+    const names = ['Justin', 'Sarah', 'Christopher'];
+
+    for (let name of names) {            //Ei tarvitse inkrementoida huomioida arvoja!
+        console.log(name);
+    }
+
 Episode 36/51:  
 Episode 37/51:  
 Episode 38/51:  
