@@ -293,7 +293,13 @@ Episode 35/51: Looppeja käytetään listan iterointiin ja while something is tr
     }
 
 Episode 36/51: VSCodessa kirjoita for, jonka jälkeen se alkaa ehdottamaan asioita! For ... of on hyvä listojen läpikäymiseen! Const sisällä toimii vaikka normaalisti sitä ei voisi vaihtaa (const = pysyvä)!   
-Episode 37/51:  
+Episode 37/51: Funktio on osa koodia, joka suorittaa rutiinitehtäviä käyttämällä sarjoja ohhjeita. Tekee koodista lyhyempää ja huollettavampaa. 
+
+    function computePrice(cost, discount) {
+        let reduction = cost*discount;
+        console.log("You saved $"+reduction);
+        return cost-reduction;
+        
 Episode 38/51:  
 Episode 39/51:  
 Episode 40/51:  
