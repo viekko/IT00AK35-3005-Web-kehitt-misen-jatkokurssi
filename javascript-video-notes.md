@@ -350,7 +350,64 @@ Episode 39/51: Fat arrow funktio => , muuttaa to the this context. Pitää assig
         - Huolletaan kun funktio siirretään referensille
 
 Episode 40/51: Ei tarvitse käyttää return parametriä jos (a, b) 0> a + b! Block sisään (a, b) => {}  
-Episode 41/51:  
+Episode 41/51: JOSN:
+
+    - "tietoformaatti"
+    - Käyttää key value paireja
+
+    // Object format
+    const book = {
+        title: "1984", 
+        author: "George Orwell",
+        isAvailable: false
+    };
+
+    // Converted to JSON
+    const bookJSON = JSON.stringify(bookObj);
+    console.log(bookJSON);                            --> {"title":"1984","author":"George Orwell","isAvailable":false};
+
+    {
+        "title":"Becoming",
+        "author":"Michelle Obama",
+        "isAvailable":false
+    };
+
+
+    var json = JSON.stringify(book);                
+    console.log(json);
+
+    --> {
+            "title":"Becoming",
+            "author":"Michelle Obama",
+            "isAvailable":false
+        };
+
+
+    var copies = [book, book];
+    var json = JSON.stringify(copies);
+    console.log(json);
+
+    [
+        {"title":"1984","author":"George Orwell","isAvailable":false};
+        {"title":"Becoming","author":"Michelle Obama","isAvailable":false};
+    ]
+
+    JSON.parse()
+
+    //json text
+    var jsonObj = '{"title":"1984","author":"George Orwell","isAvailable":false}';
+
+    // to object 
+    var book = JSON.parse(jsonObj);
+    console.log(book.title);        //1984
+
+
+    var jsonArray = 
+    '[{"title":"1984"},{"title":"Becoming"}]';
+
+    var books = JSON.parse(jsonArrau);
+    console.log(books[1].title);
+    
 Episode 42/51:  
 Episode 43/51:  
 Episode 44/51:  
