@@ -349,7 +349,7 @@ Episode 39/51: Fat arrow funktio => , muuttaa to the this context. Pitää assig
         - Ei voi muuttaa
         - Huolletaan kun funktio siirretään referensille
 
-Episode 40/51:  
+Episode 40/51: Ei tarvitse käyttää return parametriä jos (a, b) 0> a + b! Block sisään (a, b) => {}  
 Episode 41/51:  
 Episode 42/51:  
 Episode 43/51:  
