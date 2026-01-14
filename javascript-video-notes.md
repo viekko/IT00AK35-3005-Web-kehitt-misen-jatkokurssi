@@ -334,7 +334,21 @@ Episode 38/51: Funkioiden käyttö:
     let result = printHello("Microsoft !");
     console.log(result);
 
-Episode 39/51:  
+Episode 39/51: Fat arrow funktio => , muuttaa to the this context. Pitää assignaa muuttujalle tai heti käyttää! 
+
+    const add = (a, b) => a + b;
+    console.log(add(1, 2));         //3
+
+    const subtract = (a, b) => {
+        return a - b;
+    };
+    console.log(subtracy(2, 1));    //1
+
+    this     context
+        - Periytyy parent scopelta
+        - Ei voi muuttaa
+        - Huolletaan kun funktio siirretään referensille
+
 Episode 40/51:  
 Episode 41/51:  
 Episode 42/51:  
