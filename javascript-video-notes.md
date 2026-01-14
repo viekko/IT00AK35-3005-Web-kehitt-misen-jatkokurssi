@@ -409,7 +409,60 @@ Episode 41/51: JOSN:
     console.log(books[1].title);
     
 Episode 42/51: Eli vain kaksi metodia stringify ja parse. Hyvä viesti formaatti!  
-Episode 43/51:  
+Episode 43/51: Objektit:
+    - koostuu attribuuteista eli name-value paireista
+    - JS kutsutaan properties (var, eli muuttujat) ja methods (funktiot)
+
+        const book = {
+            title: "1984",                    //properties = title
+            author:"George Orwell",           //properties = author
+            isAvailable:false                 //properties = isAvailable
+    
+            checkIn: function(){                //method
+                this.isAvailable=true;
+            },
+            checkOut: function(){               //method
+                this.isAvailable=false;
+            }
+        };
+        console.log(typeof book);
+
+
+
+        const book = new Object();
+        book.title: "1984",                    //properties = title
+        book.author:"George Orwell",           //properties = author
+        book.isAvailable:false                 //properties = isAvailable
+
+        book.checkIn: function(){                //method
+            this.isAvailable=true;
+        };
+        book.checkOut: function(){               //method
+            this.isAvailable=false;
+        };
+        
+        console.log(typeof book);
+
+
+
+        - Dot notation: book.title antaa "1984"
+        - Bracket notation: book[title] antaa "1984"
+
+        Metodiin pääseminen: 
+            - book.chekIn antaa [Funktion: checkIn] ja book["CheckIn"] antaa [Funktion: checkIn]
+
+        Metodin suorittaminen
+            - book.chekIn() suorittaa ja book["CheckIn"]() suorittaa
+
+
+
+        "this" Keyword access to runtime context
+
+        function checkIn(){
+            returne this;
+        }
+        console.log( checkIn() );        --> tulostaa globaalin objektin
+    
 Episode 44/51:  
 Episode 45/51:    
 Episode 46/51:  
