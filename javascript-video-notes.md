@@ -292,7 +292,7 @@ Episode 35/51: Looppeja käytetään listan iterointiin ja while something is tr
         console.log(name);
     }
 
-Episode 36/51:  
+Episode 36/51: VSCodessa kirjoita for, jonka jälkeen se alkaa ehdottamaan asioita! For ... of on hyvä listojen läpikäymiseen! Const sisällä toimii vaikka normaalisti sitä ei voisi vaihtaa (const = pysyvä)!   
 Episode 37/51:  
 Episode 38/51:  
 Episode 39/51:  
