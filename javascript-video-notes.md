@@ -408,7 +408,7 @@ Episode 41/51: JOSN:
     var books = JSON.parse(jsonArrau);
     console.log(books[1].title);
     
-Episode 42/51:  
+Episode 42/51: Eli vain kaksi metodia stringify ja parse. Hyvä viesti formaatti!  
 Episode 43/51:  
 Episode 44/51:  
 Episode 45/51:    
