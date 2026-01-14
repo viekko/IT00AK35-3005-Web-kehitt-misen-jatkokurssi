@@ -300,7 +300,40 @@ Episode 37/51: Funktio on osa koodia, joka suorittaa rutiinitehtäviä käyttäm
         console.log("You saved $"+reduction);
         return cost-reduction;
         
-Episode 38/51:  
+Episode 38/51: Funkioiden käyttö:
+
+    function printHello(){
+        console.log("Hello world!");
+    }
+    console.log(typeof printHello);
+
+    printHello();                        //Pitää kutsua funktiota, jotta se toimii!
+
+
+    function printHello(name){
+        console.log("Hello " +name);
+    }
+    //console.log(typeof printHello);
+
+    printHello("Microsoft!");             --> Hello Microsoft!
+
+
+    function printHello(name){
+        console.log("Hello " +name);
+    }
+    //console.log(typeof printHello);
+
+    printHello();             --> Hello undefined
+
+
+    function printHello(name){
+        console.log("Hello " +name);
+        return "ma,e "+" hello!";
+    }
+
+    let result = printHello("Microsoft !");
+    console.log(result);
+
 Episode 39/51:  
 Episode 40/51:  
 Episode 41/51:  
