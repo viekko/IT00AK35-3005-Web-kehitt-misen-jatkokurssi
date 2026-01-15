@@ -464,7 +464,36 @@ Episode 43/51: Objektit:
         console.log( checkIn() );        --> tulostaa globaalin objektin
     
 Episode 44/51: Objekteja voidaan luoda hyödyntäen konstruktorjea. JSON on const, mutta siinä on useita key-value paireja! Globaali objekti joka on metodin ulkopuolella ja metodin sisäpuolella oleva book.Object eli sidottu omistajaan. globalThis voi standardoidusti kutsua globaaleja funktioita sekä node että browser. Globaali objeckti sama kuin default object.  
-Episode 45/51:    
+Episode 45/51: Modernit app hyödyntävät sovelluksen ulkopuolisia palveluita, kuten tietokannat, REST kutsut, yms. Callback, jos asiassa kestää:
+
+    function callback (){
+        console.log('Timeout completed');
+    }
+
+    setTimeout(callback, 3000); // wait 3 seconds
+
+
+
+    - monista callbackeista voi tulla ongelmia! --> promises ratkaisu (common dev pattern)
+
+    function promiseTimeout(ms) {
+        return new Promise ((resolve, reject) => {
+            setTimeout(resolve, ms);
+        });
+    }
+
+    promiseTimeout(2000)
+        .then(() => {
+            console.log('done');
+            return Promise.resolve(42);
+        })
+        .then((response) => {
+            console.log(response);
+        });
+        catch(() => {
+            console.log('cool error handling');
+        })
+    
 Episode 46/51:  
 Episode 47/51:  
 Episode 48/51:  
