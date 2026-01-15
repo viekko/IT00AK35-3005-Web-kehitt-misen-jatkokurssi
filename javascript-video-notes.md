@@ -540,4 +540,9 @@ Episode 50/51: npm init -y --> luo package.json kokonaisuuden. Express on pakett
 
     - jos piilotat portin (//jos haluaa piilottaa portin voi korvat ympäristömuuttujalla const port = process.env.PORT;)         hyödynnä dotenv packagea, joka luo uuden tiedoston!
     
-Episode 51/51:  
+Episode 51/51: Seuraavat askeleet:
+
+    Learn more at: https://github.com/microsoft/beginners-intro-javascript-node
+    Watch the entire series: https://aka.ms/BeginnersSeriesToJavaScript
+
+    - TÄRKEINTÄ ALKAA TEKEMÄÄN NYT OPITUILLA ASIOILLA JUTTUJA!
