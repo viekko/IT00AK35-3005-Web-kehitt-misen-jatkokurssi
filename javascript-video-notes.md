@@ -463,7 +463,7 @@ Episode 43/51: Objektit:
         }
         console.log( checkIn() );        --> tulostaa globaalin objektin
     
-Episode 44/51:  
+Episode 44/51: Objekteja voidaan luoda hyödyntäen konstruktorjea. JSON on const, mutta siinä on useita key-value paireja! Globaali objekti joka on metodin ulkopuolella ja metodin sisäpuolella oleva book.Object eli sidottu omistajaan. globalThis voi standardoidusti kutsua globaaleja funktioita sekä node että browser. Globaali objeckti sama kuin default object.  
 Episode 45/51:    
 Episode 46/51:  
 Episode 47/51:  
