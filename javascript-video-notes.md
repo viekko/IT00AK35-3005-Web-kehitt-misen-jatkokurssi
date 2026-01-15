@@ -515,7 +515,7 @@ Episode 47/51: Async/await saa koodin näyttämään muulta, mutta on oikeasti a
 
     run();
     
-Episode 48/51:  
+Episode 48/51: Await ei voi käyttää, jos ei käytä async function. Jos ei käytä await tulostuu Promise { 42 }.  
 Episode 49/51:  
 Episode 50/51:  
 Episode 51/51:  
