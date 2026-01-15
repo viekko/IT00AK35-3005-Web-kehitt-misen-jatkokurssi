@@ -495,7 +495,26 @@ Episode 45/51: Modernit app hyödyntävät sovelluksen ulkopuolisia palveluita, 
         })
     
 Episode 46/51: setTimeout on JS funktio! .then, .then, .then kun haluaa käydä mitä tapahtuu jonkun jälkeen asynkronisissa operaatioissa.  
-Episode 47/51:  
+Episode 47/51: Async/await saa koodin näyttämään muulta, mutta on oikeasti asynkronista. --> Käytät callbackeja myös tässäkin.
+
+    function promiseTimeout(ms) {
+        return new Promise ((resolve, reject) => {
+            setTimeout(resolve, ms);
+        });
+    }
+
+    async function simulateLongOperation() {
+        await promiseTimeout(1000);                    //ilmoittaa että koodi on paussilla kunnes operaatio suoritetaan
+        return 42;
+    }
+
+    async function run() {
+        const answer = await simulateLongOperation();
+        console.log(answer);
+    }
+
+    run();
+    
 Episode 48/51:  
 Episode 49/51:  
 Episode 50/51:  
