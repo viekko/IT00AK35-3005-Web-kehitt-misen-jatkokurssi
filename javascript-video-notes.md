@@ -522,5 +522,22 @@ Episode 49/51: Pakettien hallinta tarkoittaa sopivien määrien koodia hallitsem
 
     sen lataaminen riippuvuuksiin:
         npm install --save-dev <package_name>
-Episode 50/51:  
+        
+Episode 50/51: npm init -y --> luo package.json kokonaisuuden. Express on pakettti joka antaa luoda web palvelimen ja web apeja. (npm install express)
+
+
+    const express = require("express");
+    const app = express();
+    const port = 3000;         //jos haluaa piilottaa portin voi korvat ympäristömuuttujalla const port = process.env.PORT;
+
+    app.get("/", (req, res) => {
+        res.send("Hello world!");
+    });
+
+    app.listen(port, () => {
+        console.log('Example app listening at http://localhost:${port}');
+    });
+
+    - jos piilotat portin (//jos haluaa piilottaa portin voi korvat ympäristömuuttujalla const port = process.env.PORT;)         hyödynnä dotenv packagea, joka luo uuden tiedoston!
+    
 Episode 51/51:  
