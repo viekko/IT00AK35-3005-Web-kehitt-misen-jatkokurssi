@@ -70,33 +70,22 @@ sequenceDiagram
     participant U as User (Browser)
     participant F as Frontend (resources.js)
     participant B as Backend Route (PUT /api/resources/:id)
-    participant V as express-validator
     participant S as ResourceService
     participant DB as PostgreSQL
 
-    U->>F: Edit resource in UI
-    F->>B: PUT /api/resources/1 (JSON)
+    U->>F: Click "Update"
 
-    B->>V: Validate incoming data
-    V-->>B: Validation result
-
-    alt Validation fails
-        B-->>F: 400 Bad Request + errors[]
-        F-->>U: Show validation errors
+    alt Client validation fails
+        F-->>U: Show validation error
+        Note over F,B: No HTTP request sent
     else Validation OK
+        F->>B: PUT /api/resources/2 (JSON)
         B->>S: updateResource(id, data)
-        S->>DB: UPDATE resources SET ... WHERE id=1
-        DB-->>S: Update result (0 or 1 rows)
-
-        alt Resource not found
-            S-->>B: No rows updated
-            B-->>F: 404 Not Found
-            F-->>U: Show "Resource not found"
-        else Success
-            S-->>B: Updated resource object
-            B-->>F: 200 OK + JSON
-            F-->>U: Show "Update successful"
-        end
+        S->>DB: UPDATE resources ...
+        DB-->>S: rowCount
+        S-->>B: Updated resource
+        B-->>F: 200 OK + JSON
+        F-->>U: Show success message
     end
 ```
 
@@ -127,9 +116,4 @@ sequenceDiagram
         F-->>U: Show "Resource not found"
     end
 ```
-
-
-alt Client validation fails
-    F-->>U: Show validation error
-    Note over F,B: No HTTP request sent
 
