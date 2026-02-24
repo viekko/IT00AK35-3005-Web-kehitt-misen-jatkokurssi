@@ -127,3 +127,9 @@ sequenceDiagram
         F-->>U: Show "Resource not found"
     end
 ```
+
+
+alt Client validation fails
+    F-->>U: Show validation error
+    Note over F,B: No HTTP request sent
+
