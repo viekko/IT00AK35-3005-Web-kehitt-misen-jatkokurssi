@@ -9,29 +9,30 @@ sequenceDiagram
     participant S as ResourceService
     participant DB as PostgreSQL
 
-    U->>F: Submit "Create Resource" Form
-    F->>B: POST /api/resources (JSON)
+    U->>F: Submit form
 
-    B->>V: Validate input
+    %% Frontend validation
+    alt Client validation fails
+        F-->>U: Show validation errors
+        Note over F,B: No HTTP request sent
+    else Client validation OK
+        F->>B: POST /api/resources (JSON)
+    end
+
+    %% Backend validation
+    B->>V: Validate data
     V-->>B: Validation result
 
-    alt Validation fails
+    alt Backend validation fails
         B-->>F: 400 Bad Request + errors[]
-        F-->>U: Show validation messages
-    else Validation OK
+        F-->>U: Show backend validation errors
+    else Backend validation OK
         B->>S: createResource(data)
         S->>DB: INSERT INTO resources
-        DB-->>S: Insert result / duplicate error
-
-        alt Duplicate found
-            S-->>B: Duplicate error
-            B-->>F: 409 Conflict
-            F-->>U: Show duplicate warning
-        else Success
-            S-->>B: Resource created
-            B-->>F: 201 Created + JSON
-            F-->>U: Show success message
-        end
+        DB-->>S: Insert result
+        S-->>B: Created resource
+        B-->>F: 201 Created + JSON
+        F-->>U: Show success message
     end
 ```
 
@@ -52,12 +53,12 @@ sequenceDiagram
     S->>DB: SELECT * FROM resources
     DB-->>S: Rows[]
 
-    alt Data found
-        S-->>B: Return resources[]
+    alt Data found (>0)
+        S-->>B: resources[]
         B-->>F: 200 OK + JSON
-        F-->>U: Render list of resources
+        F-->>U: Render resources list
     else No data
-        S-->>B: Empty array
+        S-->>B: []
         B-->>F: 200 OK + []
         F-->>U: Show "No resources found"
     end
@@ -70,22 +71,41 @@ sequenceDiagram
     participant U as User (Browser)
     participant F as Frontend (resources.js)
     participant B as Backend Route (PUT /api/resources/:id)
+    participant V as express-validator
     participant S as ResourceService
     participant DB as PostgreSQL
 
-    U->>F: Click "Update"
+    U->>F: Edit values & click "Update"
 
+    %% Frontend validation
     alt Client validation fails
         F-->>U: Show validation error
         Note over F,B: No HTTP request sent
-    else Validation OK
-        F->>B: PUT /api/resources/2 (JSON)
+    else Client validation OK
+        F->>B: PUT /api/resources/1 (JSON)
+    end
+
+    %% Backend validation
+    B->>V: Validate data
+    V-->>B: Validation result
+
+    alt Backend validation fails
+        B-->>F: 400 Bad Request + errors[]
+        F-->>U: Show backend validation errors
+    else Backend validation OK
         B->>S: updateResource(id, data)
-        S->>DB: UPDATE resources ...
+        S->>DB: UPDATE resources WHERE id = 1
         DB-->>S: rowCount
-        S-->>B: Updated resource
-        B-->>F: 200 OK + JSON
-        F-->>U: Show success message
+
+        alt Resource not found (rowCount = 0)
+            S-->>B: No matching resource
+            B-->>F: 404 Not Found
+            F-->>U: Show "Resource not found"
+        else Success (rowCount = 1)
+            S-->>B: Updated resource
+            B-->>F: 200 OK + JSON
+            F-->>U: Show success message
+        end
     end
 ```
 
@@ -103,15 +123,15 @@ sequenceDiagram
     F->>B: DELETE /api/resources/1
 
     B->>S: deleteResource(id)
-    S->>DB: DELETE FROM resources WHERE id=1
-    DB-->>S: Result (rowCount)
+    S->>DB: DELETE FROM resources WHERE id = 1
+    DB-->>S: rowCount
 
-    alt Resource existed
-        S-->>B: rowCount = 1
+    alt Resource existed (rowCount = 1)
+        S-->>B: Deletion successful
         B-->>F: 204 No Content
-        F-->>U: Remove row from UI
-    else Resource not found
-        S-->>B: rowCount = 0
+        F-->>U: Remove item from UI
+    else Resource not found (rowCount = 0)
+        S-->>B: Nothing deleted
         B-->>F: 404 Not Found
         F-->>U: Show "Resource not found"
     end
